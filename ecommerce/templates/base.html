@@ -1,0 +1,27 @@
+<!-- ecommerce/loja/templates/base.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Minha Loja{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'loja/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Minha Loja</h1>
+        <nav>
+            <a href="{% url 'lista_produtos' %}">Início</a>
+            <!-- Outros links -->
+        </nav>
+    </header>
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Minha Loja</p>
+    </footer>
+</body>
+</html>

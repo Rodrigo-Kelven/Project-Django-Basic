@@ -1,0 +1,27 @@
+ecommerce/
+├── ecommerce/                  # Diretório da configuração do projeto
+│   ├── settings.py             # Configurações do projeto Django
+│   ├── urls.py                 # Arquivo de rotas do projeto
+│   ├── wsgi.py                 # Ponto de entrada para o servidor WSGI
+│   ├── asgi.py                 # Ponto de entrada para o servidor ASGI
+│   └── __init__.py             # Indica que 'ecommerce' é um pacote Python
+├── loja/                       # Aplicação principal do e-commerce
+│   ├── migrations/             # Migrações do banco de dados
+│   ├── templates/              # Templates HTML do projeto
+│   │   └── loja/               # Templates específicos da app 'loja'
+│   │       ├── lista_produtos.html # Lista de produtos (exemplo)
+│   │       └── detalhes_produto.html # Detalhes do produto (exemplo)
+│   ├── static/                 # Arquivos estáticos específicos da app 'loja'
+│   │   └── loja/               # Arquivos de CSS, JS, imagens da app
+│   │       ├── style.css       # Estilos específicos da loja
+│   ├── views.py                # Funções de visualização
+│   ├── models.py               # Modelos do banco de dados para produtos, etc.
+│   ├── urls.py                 # Arquivo de rotas específico da app
+│   └── __init__.py             # Indica que 'loja' é um pacote Python
+├── media/                      # Pasta para arquivos de mídia (imagens de produtos)
+│   └── produtos/               # Pasta onde imagens de produtos são salvas
+├── static/                     # Pasta para arquivos estáticos globais
+├── templates/                  # Pasta para templates globais
+│   └── base.html               # Template base para ser reutilizado em várias páginas
+├── manage.py                   # Script de gerenciamento do Django
+└── db.sqlite3                  # Banco de dados SQLite
